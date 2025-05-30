@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KraftPixel Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kode+Mono:wght@400..700&family=Margarine&family=Poiret+One&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./images/logomark.png" alt="main-logo" />
+            <h1>KraftPixel</h1>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <img src="./images/menu.png" alt="" />
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-nav-links">
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">Resources</a>
+                <a href="#">Pricing</a>
+            </div>
+            <div class="mobile-auth-buttons">
+                <div>
+                    <a href="#" class="login">Log In</a>
+                    <a href="#" class="signup">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="badge">About us</div>
+        <h1>About the company</h1>
+        <p>Learn more about the company and the team behind it.</p>
+    </header>
+
+    <section class="main-section">
+        <div class="content-wrapper">
+            <div class="content-right">
+                <div class="company-info">
+                    <div class="badge">We’ve helped hundreds of companies</div>
+                    <h2>We’re only just getting started on our journey</h2>
+                    <p>
+                        Everything you need to build modern UI and great products. We’ve
+                        done all the heavy lifting so you don’t have to — the perfect
+                        starting point for any project.
+                    </p>
+                </div>
+            </div>
+
+            <div class="company-metrics">
+                <div class="metric">
+                    <h3>400+</h3>
+                    <p>Projects completed</p>
+                </div>
+                <div class="metric">
+                    <h3>600%</h3>
+                    <p>Return on investment</p>
+                </div>
+                <div class="metric">
+                    <h3>10k</h3>
+                    <p>Global downloads</p>
+                </div>
+                <div class="metric">
+                    <h3>200+</h3>
+                    <p>5-star reviews</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="./images/img_desk.png" alt="" />
+        </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById("mobileMenu");
+            mobileMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
